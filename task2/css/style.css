@@ -1,0 +1,131 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background-color: rgba(255, 239, 213, 0.636);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.container{
+    max-width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.card_left
+{
+    width: 50%;
+    flex: 1;
+}
+.card_left img{
+    width: 100%;
+    object-fit: cover;
+}
+.card_right{
+    width: 50%;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card_right p{
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    /* line-height: 10px; */
+
+}
+.card_right h2{
+    font-family: 'Fraunces', serif;
+    font-weight: 800;
+    font-size:40px;
+    line-height: 30px;
+
+}
+.product_price{
+    display: flex;
+    align-content: center;
+    
+}
+.current_price{
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+.original_price{
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    font-size: 15px;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+.add_to_cart{
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding: 15px 30px;
+    font-weight: bold;
+}
+.add_to_cart:hover {
+    background-color: #326653;
+}
+@media (max-width: 768px) {
+
+.container {
+    flex-direction: column;
+    max-width: 300px;
+    overflow: visible;
+    }
+
+.card_left {
+    width: 100%;
+    height: 300px;
+
+    }
+.card_left img {
+    height: 100%;
+    }
+.card_right{
+        width: 100%;
+}
+.card_right p{
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    margin: 10px 0px;
+    /* line-height: 10px; */
+
+}
+.card_right h2{
+
+    font-weight: 800;
+    font-size:40px;
+    line-height: 30px;
+    margin: 10px 0px;
+
+}
+.add_to_cart{
+    font-size: 8px;
+    padding: 7px 30px;
+    font-weight: bold;
+    border: none;
+    }
+}
